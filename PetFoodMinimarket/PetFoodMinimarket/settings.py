@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Custom user model
+AUTH_USER_MODEL = 'users.MinimarketUser'
 
 # Application definition
 
@@ -42,6 +44,10 @@ INSTALLED_APPS = [
     'sales',
     'suppliers',
     'users',
+    'stores',
+    'rest_framework',
+    'rest_framework_nested',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
